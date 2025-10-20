@@ -1,10 +1,7 @@
 package com.healthstation.hospital.controller;
 
 import com.healthstation.hospital.DTO.UserDTO;
-import com.healthstation.hospital.entity.User;
 import com.healthstation.hospital.service.Impl.UserServiceImpl;
-import com.healthstation.hospital.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

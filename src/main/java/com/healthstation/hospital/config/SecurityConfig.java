@@ -35,8 +35,8 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
               http.authorizeHttpRequests(authz ->
                 authz                        // allow only this method for this pattern.
-                        .requestMatchers(HttpMethod.POST,"/api/users").permitAll()
-                        .requestMatchers("/api/users/**").authenticated()
+                        .requestMatchers(HttpMethod.POST,"/api/").permitAll()
+                        .requestMatchers("/api/**").authenticated()
 //                        .requestMatchers("/").permitAll()
                         .anyRequest().permitAll()
               ).csrf(csrf -> csrf.disable())

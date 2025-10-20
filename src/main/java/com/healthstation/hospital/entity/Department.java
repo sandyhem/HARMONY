@@ -38,6 +38,6 @@ public class Department {
     private boolean isActive;
 
     @ManyToOne
-    @JoinColumn(name = "head_doctor_id")
+    @JoinColumn(name = "head_doctor_id", nullable = true)
     private Doctor headDoctor;
 }
