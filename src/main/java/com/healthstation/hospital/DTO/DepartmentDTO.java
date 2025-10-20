@@ -12,6 +12,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class DepartmentDTO {
+    private String departmentId;
     private String name;
     private String description;
     private String floor;
