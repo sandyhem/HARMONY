@@ -16,6 +16,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class DoctorDTO {
+    private UUID doctorId;
     private int experience;
     private String qualification;
     private String specialization;
